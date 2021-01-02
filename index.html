@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Stylish Portfolio - Start Bootstrap Template</title>
+
+  <!-- Bootstrap Core CSS -->
+<!--  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins:wght@200&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="custom.css" type="text/css">
+
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">IEEE-TEMS</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#page-top">Home</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#about">About</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#callout">Url Shortner</a>
+      </li>
+<!--      <li class="sidebar-nav-item">-->
+<!--        <a class="js-scroll-trigger" href="#Projects">Projects</a>-->
+<!--      </li>-->
+
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1">URL SHORTNER</h1>
+      <h3 class="mb-5">
+        <em>DESIGNED BY IEEE TEMS</em>
+      </h3>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Get Started!</a>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+  <!-- About -->
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2>TEMS (Technology and Engineering Management Society)
+          </h2>
+          <p class="lead mb-5">is a student chapter of IEEE NCU SB. It aims to introduce entrepreneurs to you and motivate you in the direction of implementing your idea and get in touch with growing techies in the market.
+            <br>
+            <br>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">Learn More About Us!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="content-section bg-primary text-white text-center" id="services">
+    <div class="container">
+      <div class="content-section-heading">
+        <h2 id="vision">Vision</h2>
+        <br><br>
+        <h6 class="mb-5">The main vision of TEMS is to provide you with an opportunity to venture in innovative technologies.
+          <br> From taking new initiatives including E-mavericks to implementing innovative community projects<br>
+          TEMS provides a vast exposure by connecting the technological side with the management side.</h6>
+        <h4 class="motive">Integrating Technology for Capability and Productivity</h4>
+      </div>
+<!--      <div class="row">-->
+<!--        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">-->
+<!--          <span class="service-icon rounded-circle mx-auto mb-3">-->
+<!--            <i class="icon-screen-smartphone"></i>-->
+<!--          </span>-->
+<!--          <h4>-->
+<!--            <strong>Responsive</strong>-->
+<!--          </h4>-->
+<!--          <p class="text-faded mb-0">Looks great on any screen size!</p>-->
+<!--        </div>-->
+<!--        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">-->
+<!--          <span class="service-icon rounded-circle mx-auto mb-3">-->
+<!--            <i class="icon-pencil"></i>-->
+<!--          </span>-->
+<!--          <h4>-->
+<!--            <strong>Redesigned</strong>-->
+<!--          </h4>-->
+<!--          <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>-->
+<!--        </div>-->
+<!--        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">-->
+<!--          <span class="service-icon rounded-circle mx-auto mb-3">-->
+<!--            <i class="icon-like"></i>-->
+<!--          </span>-->
+<!--          <h4>-->
+<!--            <strong>Favorited</strong>-->
+<!--          </h4>-->
+<!--          <p class="text-faded mb-0">Millions of users-->
+<!--            <i class="fas fa-heart"></i>-->
+<!--            Start Bootstrap!</p>-->
+<!--        </div>-->
+<!--        <div class="col-lg-3 col-md-6">-->
+<!--          <span class="service-icon rounded-circle mx-auto mb-3">-->
+<!--            <i class="icon-mustache"></i>-->
+<!--          </span>-->
+<!--          <h4>-->
+<!--            <strong>Question</strong>-->
+<!--          </h4>-->
+<!--          <p class="text-faded mb-0">I mustache you a question...</p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+  </section>
+
+  <!-- Callout -->
+  <section class="callout" id="callout">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5" id="link-form">Customize Your Link</h2>
+      <form method="post" id="form-design" style="text-align: center;">
+        {% csrf_token %}
+        {{ form }}
+        <br>
+        <button type="submit" id="button-design" style="border-radius: 4px;
+    border: none; padding: 8px;">Submit</button>
+      </form>
+<!--      <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/theme/stylish-portfolio/">Download Now!</a>-->
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+<!--  <section class="content-section" id="Projects">-->
+<!--    <div class="container">-->
+<!--      <div class="content-section-heading text-center">-->
+<!--        <h3 class="text-secondary mb-0">Portfolio</h3>-->
+<!--        <h2 class="mb-5">Recent Projects</h2>-->
+<!--      </div>-->
+<!--      <div class="row no-gutters">-->
+<!--        <div class="col-lg-6">-->
+<!--          <a class="portfolio-item" href="#">-->
+<!--            <div class="caption">-->
+<!--              <div class="caption-content">-->
+<!--                <div class="h2">Stationary</div>-->
+<!--                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">-->
+<!--          </a>-->
+<!--        </div>-->
+<!--        <div class="col-lg-6">-->
+<!--          <a class="portfolio-item" href="#">-->
+<!--            <div class="caption">-->
+<!--              <div class="caption-content">-->
+<!--                <div class="h2">Ice Cream</div>-->
+<!--                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">-->
+<!--          </a>-->
+<!--        </div>-->
+<!--        <div class="col-lg-6">-->
+<!--          <a class="portfolio-item" href="#!">-->
+<!--            <div class="caption">-->
+<!--              <div class="caption-content">-->
+<!--                <div class="h2">Strawberries</div>-->
+<!--                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <img class="img-fluid" src="img/portfolio-3.jpg" alt="">-->
+<!--          </a>-->
+<!--        </div>-->
+<!--        <div class="col-lg-6">-->
+<!--          <a class="portfolio-item" href="#">-->
+<!--            <div class="caption">-->
+<!--              <div class="caption-content">-->
+<!--                <div class="h2">Workspace</div>-->
+<!--                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">-->
+<!--          </a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+
+<!--  &lt;!&ndash; Call to Action &ndash;&gt;-->
+<!--  <section class="content-section bg-primary text-white">-->
+<!--    <div class="container text-center">-->
+<!--      <h2 class="mb-4">The buttons below are impossible to resist...</h2>-->
+<!--      <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>-->
+<!--      <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>-->
+<!--    </div>-->
+<!--  </section>-->
+
+  <!-- Map -->
+  <div id="contact" class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.1993505557784!2d77.04767781506008!3d28.50364938246876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d199c98e90ff1%3A0x8b2aa76c53fb738e!2sThe%20NorthCap%20University!5e0!3m2!1sen!2sin!4v1609444166363!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <br />
+    <small>
+      <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.1993505557784!2d77.04767781506008!3d28.50364938246876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d199c98e90ff1%3A0x8b2aa76c53fb738e!2sThe%20NorthCap%20University!5e0!3m2!1sen!2sin!4v1609444166363!5m2!1sen!2sin"></a>
+    </small>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/IEEE-TEMS-NCU-112137393967843/">
+            <i class="icon-social-facebook"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/ieeetems_ncu/">
+            <i class="icon-social-instagram"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="https://www.linkedin.com/company/ieee-ncu-e-cell/">
+            <i class="icon-social-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; IEEE NCU</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+
+</body>
+
+</html>

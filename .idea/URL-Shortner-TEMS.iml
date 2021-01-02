@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../URL Shortnerner- TEMS">
+      <excludeFolder url="file://$MODULE_DIR$/../URL Shortnerner- TEMS/temp" />
+      <excludeFolder url="file://$MODULE_DIR$/../URL Shortnerner- TEMS/.tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/../URL Shortnerner- TEMS/tmp" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
